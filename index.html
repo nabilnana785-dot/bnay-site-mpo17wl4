@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boula Social</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Tahoma;
+}
+
+body{
+background:linear-gradient(to bottom,#0d1b2a,#1b263b,#415a77);
+overflow-x:hidden;
+min-height:100vh;
+color:white;
+text-align:center;
+}
+
+/* البحر */
+.ocean{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+height:200px;
+background:linear-gradient(to top,#0d3b66,#1d6fa5);
+overflow:hidden;
+z-index:-1;
+}
+
+.wave{
+position:absolute;
+width:200%;
+height:100%;
+background:url('https://i.ibb.co/7RjKq2Y/wave.png') repeat-x;
+animation:wave 10s linear infinite;
+opacity:.6;
+}
+
+.wave2{
+animation:wave2 14s linear infinite;
+opacity:.4;
+}
+
+@keyframes wave{
+0%{transform:translateX(0);}
+100%{transform:translateX(-50%);}
+}
+
+@keyframes wave2{
+0%{transform:translateX(-50%);}
+100%{transform:translateX(0);}
+}
+
+.container{
+padding:30px 20px;
+}
+
+/* اللوجو القابل للضغط */
+.profile{
+width:130px;
+height:130px;
+border-radius:50%;
+border:4px solid gold;
+margin:20px auto;
+background:linear-gradient(45deg,#ffd700,#b8860b);
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:45px;
+box-shadow:0 0 25px gold;
+animation:float 3s ease-in-out infinite;
+text-decoration:none;
+color:white;
+cursor:pointer;
+}
+
+.profile:active{
+transform:scale(0.95);
+}
+
+@keyframes float{
+50%{
+transform:translateY(-10px);
+}
+}
+
+h1{
+font-size:35px;
+color:gold;
+text-shadow:0 0 15px gold;
+margin-bottom:10px;
+}
+
+p{
+opacity:.9;
+margin-bottom:25px;
+}
+
+.links{
+max-width:420px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.links a{
+text-decoration:none;
+padding:18px;
+border-radius:18px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(10px);
+color:white;
+font-size:18px;
+border:1px solid rgba(255,215,0,.4);
+box-shadow:0 0 15px rgba(255,215,0,.2);
+transition:.4s;
+}
+
+.links a:hover{
+transform:translateY(-5px) scale(1.03);
+background:rgba(255,215,0,.2);
+box-shadow:0 0 25px gold;
+}
+
+.footer{
+margin-top:30px;
+color:#ddd;
+font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="ocean">
+<div class="wave"></div>
+<div class="wave wave2"></div>
+</div>
+
+<div class="container">
+
+<!-- اللوجو (بيفتح التطبيق) -->
+<a href="https://by-copy-e5de00a9.base44.app" target="_blank" class="profile">
+👑
+</a>
+
+<h1>Boula World</h1>
+<p>كل حساباتي وروابطي في مكان واحد ✨</p>
+
+<div class="links">
+
+<a href="https://www.instagram.com/boulana11?igsh=MWR6NzFqOTFjbTFyeQ==" target="_blank">📸 Instagram</a>
+
+<a href="https://www.tiktok.com/@tiktoklive_boula?_r=1&_t=ZS-95Z7WNzktTp" target="_blank">🎵 TikTok</a>
+
+<a href="https://www.facebook.com/share/1E7hgBem3e/" target="_blank">📘 Facebook</a>
+
+<a href="https://youtube.com/@poularoper-g9z8x?si=cadhQXXIgu_E8C7U" target="_blank">▶ YouTube</a>
+
+<a href="https://by-copy-e5de00a9.base44.app" target="_blank">📱 تطبيقي</a>
+
+<a href="https://nabilnana785-dot.github.io/Boula-Designer/" target="_blank">🌐 موقع شغلي</a>
+
+<a href="https://spirit-spark-net.lovable.app/" target="_blank">💬 تطبيق الاجتماع</a>
+
+<a href="https://twet.link/poulanapil5" target="_blank">🔒 رسالة سرية</a>
+
+<a href="https://wa.me/201558247219" target="_blank">🟢 WhatsApp</a>
+
+</div>
+
+<div class="footer">
+Made with ❤️ By Boula
+</div>
+
+</div>
+
+</body>
+</html>
